@@ -1,0 +1,205 @@
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>GlennSunni</title>
+      <link href="./css/style.css" rel="stylesheet">
+      <link rel="icon" href='logotrans.png'>
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script>
+  </head>
+  <body>
+
+
+    <ul id='nav'>
+        <span id='logo-holder' class='top'>
+          <li id='logo'><a><div id="logoimg"></div></a></li>
+          <li id='company-name'><a>GlennSunni</a></li>
+        </span>
+        <div id='bun'><div id='hamburger'></div></div>
+        <span id='places'>
+          <li><a class='top'>Home</a></li>
+          <li><a href='about.html' id='nav-about'>About</a></li>
+          <li><a href='clients.html'>Clients</a></li>
+          <li class='menu'>
+            <a href='cat.html'>Products</a>
+            <ul class='sub-menu'>
+              <li><a href='piping.html'>Piping Systems</a></li>
+              <li><a href='piping.html'>Lining Systems</a></li>
+              <li><a href='piping.html'>Semi-Finished</a></li>
+              <li><a href='cat.html'>View All</a></li>
+            </ul>
+          </li>
+          <li><a id='nav-contact'>Contact</a></li>
+        </span>
+    </ul>
+
+
+    <div id='landing' class='big-container'>
+    <!--
+      <video id='bgvid' autoplay='true' loop muted>
+        <source src='us-globe.mp4' type='video/mp4'>
+      </video> -->
+      <div class='overlay'>
+        <div class='column'>
+          <div id='landing-title'>Modern Piping Solutions</div>
+          <div id='landing-subtitle'>At Prices You Can Afford</div>
+          <div id='scroll-down'>
+            Learn More &nbsp &darr;
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id='about'>
+      <div class='container-main'>
+        <div class='info'>
+          <div class='section-title'>
+            Quality<span>&</span>Practical
+          </div>
+          <div class='section-subtitle'>
+            We take pride in providing you with innovative solutions from award-winning manufacturers. Our diverse catalogue of products are used in every industry.
+          </div>
+          <div id='view-products'>
+            <a href='cat.html'>View our products &rarr;</a>
+          </div>
+        </div>
+        <div class='images-container'>
+          <div class='center'>
+            <div id='authorized'>Authorized distributors for:</div>
+            <div id='distributors'>
+              <div class='dist-col'>
+                <a href='http://agruamerica.com/'><img src='./media/agrulogotransparent.png'></a>
+                <div class='dist-address'>500 Garrison Road<br>Georgiatown, SC 29440<br>USA</div>
+              </div>
+              <div class='dist-col'>
+                <a href='http://www.cpp-pipe.com/'><img src='./media/cpplogotransparent.png'></a>
+                <div class='dist-address'> 852 Autry Hwy<br>Roseboro, NC 28382<br>USA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id='about2'>
+      <div class='container-main'>
+        <div class='info'>
+          <div class='section-title'>
+            Experienced<span>&</span>Dedicated
+          </div>
+          <div class='section-subtitle'>
+            With years of experience in fields ranging from the Energy Industry to Civil Engineering, our team of experts bring a standard of excellence to your projects: from selection to installation, we have your needs in mind.
+          </div>
+          <div id='view-team'>
+            <a href='about.html'>Meet our team &rarr;</a>
+          </div>
+        </div>
+        <div class='images-container'>
+          <div class='image'></div>
+        </div>
+      </div>
+    </div>
+
+    <a name='contact-anchor' id='contact-anchor'></a>
+    <div class='dyn-container' id='map-form-contact'>
+      <div id='map-form-contact-container'>
+        <div id='not-map'>
+          <div id='contact'>
+            <div id='contact-title'>Contact us</div>
+            <div id='contact-subtitle'>If you have any questions or would like a quote, get in touch with us. To apply for a job with us, email us your cover letter and your C.V.</div>
+
+            <div id='contact-details'>
+              <div class='info-pair'> 
+                <div>Address:</div>
+                <div>56 Caroni Savannah Rd.<br>Chagaunas 501321</div>
+              </div>
+
+              <div class='info-pair'> 
+                <div>Telephone:</div>
+                <div>1 (868) 778-2835<br>1 (868) 686-9131</div>
+              </div>
+              <div class='info-pair'>
+                <div>Web:</div>
+                <div>info@glennsunni.com<br>facebook.com/glennsunni</div>
+              </div>
+            </div>
+          </div>
+
+          <div id='form-holder'>
+            <form id='form'>
+              <div>
+                <label for='name'>Name</label>
+                <input type='text' name='name'>
+              </div>
+
+              <div>
+                <label for='email'>Email</label>
+                <input type='text' name='email'>
+              </div>
+
+              <div>
+                <label for='subject'>Subject</label>
+                <input type='text' name='subject'>
+              </div>
+
+              <div>
+                <label for='message'>Message</label>
+                <textarea name='message'></textarea>
+              </div>
+
+              <div id='response-submit'>
+                <div class="response-success">Your message was sent!</div>
+                <div class="response-failure">Something went wrong.</div>
+                <input type='submit' value="Submit" id='submit'>
+              </div>
+
+              <input type="hidden" name="_next" value="GlennSunni/index.html#contact-anchor" />
+              <input type="text" name="_gotcha" style="display:none" />
+
+            </form>
+          </div>
+        </div>
+
+        <div id='map-container'>
+          <div id='map'></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id='footer'>
+      <div class='restrain'>
+        <div id='row1'>
+          <div id='footer-address'>
+            GlennSunni Products And Services<br>56 Caroni Savannah Rd.<br>Chagaunas 501321
+          </div>
+
+          <div id='footer-contact'>
+            <div id='info-contact-label'>
+              <div>Phone:</div><div id='transparent'>Phone:</div><div>E-Mail:</div>
+            </div>
+            <div id='footer-contact-info'>
+              <div>1 (868) 778-2835</div><div>1 (868) 686-9131</div><div>info@glennsunni.com</div>
+            </div>
+          </div>
+        </div>
+
+        <div id='footer-line'></div>
+
+        <div id='row2'>
+          <div id='copyright'>
+            <div>Copyright &copy <span id='current-year'>2016</span>&nbsp</div><div>GlennSunni Products And Services</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsbdyGoDXqM3ReRTQVEDN5D9ly3z0X8Fo&callback=initMap"
+    async defer></script>
+    <script src='./javascript/index.js'></script>
+  </body>
+</html>

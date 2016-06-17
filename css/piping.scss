@@ -1,0 +1,135 @@
+@import '_default';
+
+.main-container {
+	background-image: url('../media/cong1.png');
+	padding: 2em 0;
+	margin-top: 102px;
+	display: flex;
+	justify-content: center;
+	color: #000;
+
+	.main {
+		width: 80%;
+		max-width: 50em;
+		display: flex;
+		flex-direction: column;
+
+		.module1 {
+			width: 100%;
+
+			.title {
+				font-size: 2.5em;
+				margin-bottom: 0.25em;
+				text-align: center;
+
+				@media (min-width: 850px) {
+					font-size: 3.5em;
+				}
+			}
+
+			.subtitle {
+				font-size: 1.2em;
+				color: #333;
+				margin-bottom: 1em;
+				text-align: center;
+
+				@media (min-width: 850px) {
+					font-size: 1.5em;
+				}
+			}
+
+			.banner {
+				position: relative;
+				margin-bottom: 2em;
+				max-width: 30em;
+				margin: 0 auto;
+
+
+				.banner-content {
+					background-image: url('https://static.wixstatic.com/media/b2021a_3a2034d967044348951fed62cd3187db.jpg/v1/fill/w_600,h_285,al_c,q_80,usm_0.66_1.00_0.01/b2021a_3a2034d967044348951fed62cd3187db.jpg');
+					background-size: 100% 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+
+				}
+			}
+
+			.banner:before {
+				display: block;
+				width: 100%;
+				padding-top: 50%;
+				content: "";
+			}
+
+			.content-container {
+				display: flex;
+				flex-direction: column;
+				margin-top: 2em;
+
+				@media (min-width: 850px) {
+					flex-direction: row-reverse;
+				}
+
+				.list-container {
+					@media (min-width: 850px) {
+						width: 30%;
+					}
+
+					.list-title {
+						padding-left: 20px;
+						font-size: 1.2em;
+					}
+
+					.benefit-list {
+						font-size: 1em;
+					}
+				}
+
+				.body {
+					margin-bottom: 2em;
+
+					@media (min-width: 850px) {
+						width: 70%;
+					}
+				}
+			}
+		}
+
+		.module2 {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+
+			.brochure-holder {
+				a {
+					text-decoration: none;
+					color: $contrast-dark;
+
+					.brochure-image {
+						background-image: url('../media/guide.jpg');
+						background-size: cover;
+						width: 10em;
+						height: 14em;
+						margin-bottom: 0.5em;
+
+						@media (min-width: 850px) {
+							width: 11em;
+							height: 15.4em;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	@media (max-width: 850px) {
+		margin-top: 70px;
+	}
+}
