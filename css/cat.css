@@ -16,19 +16,27 @@ html, body {
   top: 0;
   min-width: 100%;
   z-index: 1;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
   transition: all 0.5s ease; }
   #nav #logo-holder {
     cursor: pointer;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     font-size: 2em;
     padding-left: 2vw; }
     #nav #logo-holder #company-name a {
       color: #ggg;
-      user-select: none; }
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none; }
     #nav #logo-holder #logoimg {
       background-image: url("../media/logotrans.png");
       background-size: cover;
@@ -52,7 +60,10 @@ html, body {
     font-size: 1.1em; }
     #nav #places a {
       cursor: pointer;
-      user-select: none;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
       transition: all 0.5s ease; }
     #nav #places a:hover {
       background-color: rgba(65, 65, 65, 0.5); }
@@ -93,19 +104,25 @@ html, body {
     background-color: #141414 !important; } }
 @media (max-width: 850px) {
   #nav {
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: space-between; }
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: space-between;
+        align-items: space-between; }
     #nav #logo-holder {
       padding-left: 0;
       font-size: 1.2em;
-      align-self: flex-start; }
+      -ms-flex-item-align: start;
+          align-self: flex-start; }
       #nav #logo-holder a {
         padding-top: 0;
         padding-bottom: 0; }
       #nav #logo-holder #logo a {
+        display: -ms-flexbox;
         display: flex;
-        align-items: center; }
+        -ms-flex-align: center;
+            align-items: center; }
         #nav #logo-holder #logo a #logoimg {
           height: 35px;
           width: 35px; }
@@ -132,6 +149,7 @@ html, body {
         min-width: 100%; }
     #nav #bun {
       height: 20px;
+      display: -ms-flexbox;
       display: flex;
       position: fixed;
       top: 25px;
@@ -167,26 +185,37 @@ html, body {
 #footer {
   height: 140px;
   background-color: #111;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
   font-size: .8em; }
   #footer .restrain {
     width: 80%;
     height: 80%;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; }
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
     @media (max-width: 500px) {
       #footer .restrain {
         width: 90%; } }
     #footer .restrain #row1 {
       width: 100%;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between; }
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
       #footer .restrain #row1 #footer-contact {
+        display: -ms-flexbox;
         display: flex; }
         #footer .restrain #row1 #footer-contact #footer-contact-info {
           text-align: right;
@@ -198,55 +227,73 @@ html, body {
       width: 100%;
       background-color: #555; }
     #footer .restrain #row2 {
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
       width: 100%; }
       #footer .restrain #row2 #copyright {
+        display: -ms-flexbox;
         display: flex; }
         @media (max-width: 375px) {
           #footer .restrain #row2 #copyright {
-            align-items: center;
-            flex-direction: column; } }
+            -ms-flex-align: center;
+                -ms-grid-row-align: center;
+                align-items: center;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
 
 @media (max-width: 430px) {
   #footer {
     height: 200px; }
     #footer .restrain {
       width: 80%;
-      align-items: center; }
+      -ms-flex-align: center;
+          -ms-grid-row-align: center;
+          align-items: center; }
       #footer .restrain #row1, #footer .restrain #row2 {
         width: auto; }
       #footer .restrain #footer-line {
         width: 192px;
         display: none; }
       #footer .restrain #row1 {
-        flex-direction: column;
-        align-items: center; }
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-align: center;
+            -ms-grid-row-align: center;
+            align-items: center; }
         #footer .restrain #row1 #footer-address {
           text-align: center;
           padding-bottom: .8em; }
         #footer .restrain #row1 #footer-contact {
-          justify-content: flex-start; }
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
       #footer .restrain #row2 {
-        justify-content: flex-start; } }
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
 #main-container {
-  background-image: url("../media/cong1.png");
+  background-color: #fff;
   padding: 2em 0;
   margin-top: 102px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  color: #000; }
+  -ms-flex-pack: center;
+      justify-content: center;
+  color: #111; }
   @media (max-width: 850px) {
     #main-container {
       margin-top: 70px; } }
   @media (min-width: 1200px) {
     #main-container {
-      padding-bottom: 4em; } }
+      padding: 4em 0; } }
   #main-container #main {
     width: 80%;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center; }
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
     #main-container #main #main-title {
       font-size: 2.5em;
       width: 100%;
@@ -267,34 +314,57 @@ html, body {
         #main-container #main #main-desc {
           width: 30em; } }
     #main-container #main .row {
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column; }
+      -ms-flex-direction: column;
+          flex-direction: column; }
       @media (min-width: 1200px) {
         #main-container #main .row {
-          flex-direction: row; }
+          -ms-flex-direction: row;
+              flex-direction: row; }
           #main-container #main .row .unit + .unit {
             margin-left: 1.5vw; } }
       #main-container #main .row .unit {
-        margin-bottom: 1em;
+        margin-bottom: 4em;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column; }
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        #main-container #main .row .unit #sureline-img {
+          background-image: url("../media/sureline-img.jpg"); }
+        #main-container #main .row .unit #industrial-img {
+          background-image: url("../media/industrial-piping.jpg"); }
+        #main-container #main .row .unit #agruair-agrusan-img {
+          background-image: url("../media/agruair-agrusan.jpg"); }
+        #main-container #main .row .unit #lining-systems-img {
+          background-image: url("../media/lining-systems.jpg"); }
+        #main-container #main .row .unit #semi-finished-img {
+          background-image: url("../media/semi-finished-products.jpg"); }
+        #main-container #main .row .unit #concrete-protection-img {
+          background-image: url("../media/concrete-protection.jpg"); }
         #main-container #main .row .unit .prod-img {
-          background-image: url("../media/gen-pipe.jpg");
+          background-position: center bottom;
           width: 80vw;
-          height: 20vw;
+          height: 45vw;
           background-size: cover;
           margin-bottom: 0.5em; }
+          @media (min-width: 500px) {
+            #main-container #main .row .unit .prod-img {
+              height: 30vw; } }
           @media (min-width: 850px) {
             #main-container #main .row .unit .prod-img {
+              background-position: center;
               width: 24vw;
               height: 20vw;
               margin-right: 1vw;
               margin-bottom: 0; } }
           @media (min-width: 1200px) {
             #main-container #main .row .unit .prod-img {
-              width: 12vw;
-              height: 12vw;
-              margin-right: 0.5vw; } }
+              width: 14vw;
+              height: 14vw;
+              margin-right: 1.5vw; } }
+        #main-container #main .row .unit .prod-info sup {
+          font-size: 60%; }
         #main-container #main .row .unit .prod-info .prod-title {
           font-size: 1.6em;
           margin-bottom: 0.25em; }
@@ -308,12 +378,8 @@ html, body {
             width: 55vw; } }
         @media (min-width: 1200px) {
           #main-container #main .row .unit .prod-info {
-            width: 26vw; } }
+            width: 22vw; } }
         @media (min-width: 850px) {
           #main-container #main .row .unit {
-            flex-direction: row; } }
-    @media (min-width: 1200px) {
-      #main-container #main .row + .row {
-        padding-top: 3em; } }
-
-/*# sourceMappingURL=cat.css.map */
+            -ms-flex-direction: row;
+                flex-direction: row; } }

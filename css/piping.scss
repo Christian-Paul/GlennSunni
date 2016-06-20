@@ -1,12 +1,16 @@
 @import '_default';
 
 .main-container {
-	background-image: url('../media/cong1.png');
+	background-color: #fff;
 	padding: 2em 0;
 	margin-top: 102px;
 	display: flex;
 	justify-content: center;
 	color: #000;
+
+	sup {
+		font-size: 60%;
+	}
 
 	.main {
 		width: 80%;
@@ -17,83 +21,154 @@
 		.module1 {
 			width: 100%;
 
-			.title {
-				font-size: 2.5em;
-				margin-bottom: 0.25em;
+			.main-title {
+				font-size: 2em;
 				text-align: center;
-
-				@media (min-width: 850px) {
-					font-size: 3.5em;
-				}
-			}
-
-			.subtitle {
-				font-size: 1.2em;
-				color: #333;
 				margin-bottom: 1em;
-				text-align: center;
 
-				@media (min-width: 850px) {
-					font-size: 1.5em;
+				@media (min-width: 700px) {
+					text-align: center;
+					font-size: 3em;
+					margin-bottom: 1em;
 				}
 			}
 
-			.banner {
-				position: relative;
-				margin-bottom: 2em;
-				max-width: 30em;
-				margin: 0 auto;
+			.intro {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
 
-
-				.banner-content {
-					background-image: url('https://static.wixstatic.com/media/b2021a_3a2034d967044348951fed62cd3187db.jpg/v1/fill/w_600,h_285,al_c,q_80,usm_0.66_1.00_0.01/b2021a_3a2034d967044348951fed62cd3187db.jpg');
-					background-size: 100% 100%;
-					position: absolute;
-					top: 0;
-					left: 0;
-					right: 0;
-					bottom: 0;
-
+				@media (min-width: 700px) {
+					flex-direction: row;
+					justify-content: space-between;
 				}
-			}
 
-			.banner:before {
-				display: block;
-				width: 100%;
-				padding-top: 50%;
-				content: "";
+				.list-container {
+					display: flex;
+					justify-content: center;
+					width: 95%;
+
+					@media (min-width: 400px) {
+						width: 95%;
+					}
+
+					@media (min-width: 500px) {
+						width: 90%;
+					}
+
+					@media (min-width: 600px) {
+						width: 85%;
+					}
+
+					@media (min-width: 700px) {
+						width: 50%;
+						display: flex;
+						justify-content: center;
+					}
+
+					.list {
+
+						.list-title {
+							@media (min-width: 700px) {
+								text-align: center;
+								font-size: 1.4em;
+							}
+
+							padding-left: 20px;
+							font-size: 1.2em;
+						}
+
+						.benefit-list {
+							font-size: 1em;
+						}
+					}
+				}
+
+				.banner {
+					position: relative;
+					margin-bottom: 2em;
+					width: 95%;
+
+					@media (min-width: 400px) {
+						width: 95%;
+					}
+
+					@media (min-width: 500px) {
+						width: 90%;
+					}
+
+					@media (min-width: 600px) {
+						width: 85%;
+					}
+
+					@media (min-width: 700px) {
+						margin-bottom: 0;
+						width: 50%;
+					}
+
+					.banner-content {
+						background-size: 100% 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+
+					}
+
+					#sureline-banner {
+						background-image: url('../media/sureline-img.jpg');
+					}
+
+					#industrial-banner {
+						background-image: url('../media/industrial-piping.jpg');
+					}
+					#agruair-agrusan-banner {
+						background-image: url('../media/agruair-agrusan.jpg');
+					}
+					#semi-finished-banner {
+						background-image: url('../media/semi-finished-products.jpg');
+					}
+					#concrete-protection-banner {
+						background-image: url('../media/concrete-protection.jpg');
+					}
+					#lining-systems-banner {
+						background-image: url('../media/lining-systems.jpg');
+					}
+				}
+
+				.banner:before {
+					display: block;
+					width: 100%;
+					padding-top: 50%;
+					content: "";
+				}
 			}
 
 			.content-container {
 				display: flex;
 				flex-direction: column;
-				margin-top: 2em;
+				margin-top: 1em;
 
-				@media (min-width: 850px) {
-					flex-direction: row-reverse;
+				@media (min-width: 700px) {
+					margin-top: 2em;
+					align-items: center;
 				}
 
-				.list-container {
-					@media (min-width: 850px) {
-						width: 30%;
-					}
-
-					.list-title {
-						padding-left: 20px;
-						font-size: 1.2em;
-					}
-
-					.benefit-list {
-						font-size: 1em;
-					}
+				@media (min-width: 1000px) {
+					margin-top: 3em;
+					align-items: center;
 				}
 
 				.body {
-					margin-bottom: 2em;
-
-					@media (min-width: 850px) {
-						width: 70%;
+					.body-title {
+						font-size: 1.4em;
+						padding-bottom: 0.5em;
 					}
+				}
+
+				.body + .body {
+					padding-top: 2em;
 				}
 			}
 		}
@@ -107,9 +182,15 @@
 			text-align: center;
 
 			.brochure-holder {
+				margin-top: 2em;
+				margin-bottom: 1em;
+
+				@media (min-width: 1000px) {
+					margin-top: 3em;
+				}
+
 				a {
 					text-decoration: none;
-					color: $contrast-dark;
 
 					.brochure-image {
 						background-image: url('../media/guide.jpg');
@@ -117,11 +198,17 @@
 						width: 10em;
 						height: 14em;
 						margin-bottom: 0.5em;
+					}
 
-						@media (min-width: 850px) {
-							width: 11em;
-							height: 15.4em;
-						}
+					.brochure-text {
+						color: $contrast-dark;
+						transition: all 0.5s ease;
+					}
+				}
+
+				a:hover {
+					.brochure-text {
+						color: red;
 					}
 				}
 			}

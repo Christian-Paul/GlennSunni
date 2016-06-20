@@ -248,7 +248,7 @@ html, body {
 
 #landing {
   font-size: 16px;
-  background: url("../media/city1.jpg") no-repeat center center;
+  background: url("../media/city1-min.jpg") no-repeat center center;
   background-size: cover; }
   #landing #bgvid {
     position: absolute;
@@ -418,14 +418,25 @@ html, body {
             display: flex;
             flex-direction: column;
             align-items: center; }
-            #about .container-main .images-container .center #distributors .dist-col a img {
-              width: 5em; }
+            #about .container-main .images-container .center #distributors .dist-col a .distributor-logo {
+              width: 5em;
+              height: 5em;
+              margin-bottom: 0.35em; }
               @media (min-width: 800px) {
-                #about .container-main .images-container .center #distributors .dist-col a img {
-                  width: 6em; } }
+                #about .container-main .images-container .center #distributors .dist-col a .distributor-logo {
+                  width: 6em;
+                  height: 6em; } }
               @media (min-width: 1060px) {
-                #about .container-main .images-container .center #distributors .dist-col a img {
-                  width: 8em; } }
+                #about .container-main .images-container .center #distributors .dist-col a .distributor-logo {
+                  width: 8em;
+                  height: 8em; } }
+            #about .container-main .images-container .center #distributors .dist-col #agru-logo {
+              background-image: url("../media/agrulogotransparent.png");
+              background-size: cover; }
+            #about .container-main .images-container .center #distributors .dist-col #ccp-logo {
+              background-image: url("../media/ccp-logo-cropped.jpg");
+              background-size: contain;
+              background-repeat: no-repeat; }
             #about .container-main .images-container .center #distributors .dist-col .dist-address {
               font-size: 0.6em;
               text-align: center; }
@@ -532,7 +543,7 @@ html, body {
         #about2 .container-main .images-container {
           padding-right: 5em; } }
       #about2 .container-main .images-container .image {
-        background: url("../media/man-signing.jpg") no-repeat left center;
+        background: url("../media/man-signing-min.jpg") no-repeat left center;
         background-size: cover;
         width: 12em;
         height: 12em;
@@ -684,6 +695,9 @@ html, body {
             color: #AD2E24; }
           #map-form-contact #map-form-contact-container #not-map #form-holder form div input {
             height: 2em; }
+            @media (min-width: 1300px) {
+              #map-form-contact #map-form-contact-container #not-map #form-holder form div input {
+                height: 2.5em; } }
           #map-form-contact #map-form-contact-container #not-map #form-holder form div input, #map-form-contact #map-form-contact-container #not-map #form-holder form div textarea {
             padding-left: 0.1em;
             font-family: sans-serif; }
@@ -712,7 +726,7 @@ html, body {
             color: #fff;
             font-size: 0.8em;
             width: 5em;
-            height: 2em; }
+            height: 2.5em; }
             @media (min-width: 1300px) {
               #map-form-contact #map-form-contact-container #not-map #form-holder form #response-submit #submit {
                 font-size: 1em; } }

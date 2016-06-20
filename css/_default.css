@@ -16,24 +16,19 @@ html, body {
   top: 0;
   min-width: 100%;
   z-index: 1;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
   transition: background-color 0.5s ease; }
   #nav #logo-holder {
     cursor: pointer;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     font-size: 2em;
     padding-left: 2vw; }
     #nav #logo-holder #company-name a {
@@ -74,8 +69,7 @@ html, body {
     #nav #places .menu {
       position: relative;
       cursor: pointer;
-      -webkit-backface-visibility: hidden;
-              backface-visibility: hidden;
+      backface-visibility: hidden;
       /* disables weird blue flash on chrome mobile */ }
       #nav #places .menu .sub-menu {
         display: none;
@@ -93,8 +87,7 @@ html, body {
             line-height: 46.2px;
             min-height: 46.2px;
             padding: 10.56px 9.24px;
-            -webkit-backface-visibility: hidden;
-                    backface-visibility: hidden;
+            backface-visibility: hidden;
             /* disables weird blue flash on chrome mobile */ }
           #nav #places .menu .sub-menu li a:hover {
             background-color: rgba(25, 25, 25, 0.5); }
@@ -108,18 +101,14 @@ html, body {
     background-color: #141414 !important; } }
 @media (max-width: 850px) {
   #nav {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     #nav #logo-holder {
       padding-left: 0;
       font-size: 1.2em; }
@@ -127,12 +116,10 @@ html, body {
         padding-top: 0;
         padding-bottom: 0; }
       #nav #logo-holder #logo a {
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center; }
+        -ms-flex-align: center;
+            align-items: center; }
         #nav #logo-holder #logo a #logoimg {
           height: 35px;
           width: 35px; }
@@ -159,11 +146,9 @@ html, body {
         min-width: 100%; }
     #nav #bun {
       height: 20px;
-      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-item-align: center;
-          -webkit-align-self: center;
               align-self: center;
       padding-right: 16px; }
       #nav #bun #hamburger {
@@ -189,57 +174,44 @@ html, body {
       #nav #bun #hamburger.clicked {
         background: transparent; }
       #nav #bun #hamburger.clicked:before {
-        -webkit-transform: rotate(45deg);
-                transform: rotate(45deg); }
+        transform: rotate(45deg); }
       #nav #bun #hamburger.clicked:after {
-        -webkit-transform: rotate(-45deg);
-                transform: rotate(-45deg); }
+        transform: rotate(-45deg); }
       #nav #bun #hamburger.clicked:before, #nav #bun #hamburger.clicked:after {
         top: 0; } }
 #footer {
   height: 140px;
   background-color: #111;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
   font-size: .8em; }
   #footer .restrain {
     width: 80%;
     height: 80%;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around; }
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
     @media (max-width: 500px) {
       #footer .restrain {
         width: 90%; } }
     #footer .restrain #row1 {
       width: 100%;
-      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
       #footer .restrain #row1 #footer-contact {
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex; }
         #footer .restrain #row1 #footer-contact #footer-contact-info {
@@ -252,54 +224,47 @@ html, body {
       width: 100%;
       background-color: #555; }
     #footer .restrain #row2 {
-      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
       width: 100%; }
       #footer .restrain #row2 #copyright {
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex; }
         @media (max-width: 375px) {
           #footer .restrain #row2 #copyright {
-            -webkit-align-items: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            -webkit-flex-direction: column;
-                -ms-flex-direction: column;
-                    flex-direction: column; } }
+            -ms-flex-align: center;
+                -ms-grid-row-align: center;
+                align-items: center;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
 
 @media (max-width: 430px) {
   #footer {
     height: 200px; }
     #footer .restrain {
       width: 80%;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      -ms-flex-align: center;
+          -ms-grid-row-align: center;
+          align-items: center; }
       #footer .restrain #row1, #footer .restrain #row2 {
         width: auto; }
       #footer .restrain #footer-line {
         width: 192px;
         display: none; }
       #footer .restrain #row1 {
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center; }
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-align: center;
+            -ms-grid-row-align: center;
+            align-items: center; }
         #footer .restrain #row1 #footer-address {
           text-align: center;
           padding-bottom: .8em; }
         #footer .restrain #row1 #footer-contact {
-          -webkit-justify-content: flex-start;
-              -ms-flex-pack: start;
-                  justify-content: flex-start; }
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
       #footer .restrain #row2 {
-        -webkit-justify-content: flex-start;
-            -ms-flex-pack: start;
-                justify-content: flex-start; } }
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }

@@ -1,19 +1,19 @@
 @import '_default';
 
 #main-container {
-	background-image: url('../media/cong1.png');
+	background-color: #fff;
 	padding: 2em 0;
 	margin-top: 102px;
 	display: flex;
 	justify-content: center;
-	color: #000;
+	color: #111;
 
 	@media (max-width: 850px) {
 		margin-top: 70px;
 	}
 
 	@media (min-width: 1200px) {
-		padding-bottom: 4em;
+		padding: 4em 0;
 	}
 
 	#main {
@@ -61,18 +61,43 @@
 			}
 
 			.unit {
-				margin-bottom: 1em;
+				margin-bottom: 4em;
 				display: flex;
 				flex-direction: column;
 
+				#sureline-img {
+					background-image: url('../media/sureline-img.jpg');
+				}
+
+				#industrial-img {
+					background-image: url('../media/industrial-piping.jpg');
+				}
+				#agruair-agrusan-img {
+					background-image: url('../media/agruair-agrusan.jpg');
+				}
+				#lining-systems-img {
+					background-image: url('../media/lining-systems.jpg');
+				}
+				#semi-finished-img {
+					background-image: url('../media/semi-finished-products.jpg');
+				}
+				#concrete-protection-img {
+					background-image: url('../media/concrete-protection.jpg');
+				}
+
 				.prod-img {
-					background-image: url('../media/gen-pipe.jpg');
+					background-position: center bottom;
 					width: 80vw;
-					height: 20vw;
+					height: 45vw;
 					background-size: cover;
 					margin-bottom: 0.5em;
 
+					@media (min-width: 500px) {
+						height: 30vw;
+					}
+
 					@media (min-width: 850px) {
+						background-position: center;
 						width: 24vw;
 						height: 20vw;
 						margin-right: 1vw;
@@ -80,13 +105,17 @@
 					}
 
 					@media (min-width: 1200px) {
-						width: 12vw;
-						height: 12vw;
-						margin-right: 0.5vw;
+						width: 14vw;
+						height: 14vw;
+						margin-right: 1.5vw;
 					}
 				}
 
 				.prod-info {
+					sup {
+						font-size: 60%;
+					}
+
 					.prod-title {
 						font-size: 1.6em;
 						margin-bottom: 0.25em;
@@ -106,7 +135,7 @@
 					}
 
 					@media (min-width: 1200px) {
-						width: 26vw;
+						width: 22vw;
 					}
 				}
 
@@ -118,7 +147,7 @@
 
 		.row + .row {
 			@media (min-width: 1200px) {
-				padding-top: 3em;
+			//	padding-top: 2em;
 			}
 		}
 	}
